@@ -1,0 +1,27 @@
+/* Whiskey Trail CSS Stylesheet
+**********************************
+* author: Mike DeAngelis
+* email: mjdeangelis@gmail.com
+**********************************
+*/
+
+body {
+	margin:0;
+}
+
+/* Helper Classes */
+.top-buffer {margin-top: 20px;}
+.grey {color: #D3D3D3 !important;}
+
+.wood-background {background-image: url("../img/dark_wood.png");}
+
+/* Navigation Fixes */
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+.nav-tabs, .nav-pills {
+    text-align:center;
+}

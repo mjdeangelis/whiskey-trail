@@ -1,0 +1,25 @@
+{
+        "name": "Buffalo Trace Kentucky Straight Bourbon Whiskey",
+        "id": "buffalo-trace",
+        "distillery": "Buffalo Trace Distillery",
+        "type": "Bourbon",
+        "region": "American",
+        "priceLevel": "$$",
+        "tasteInfo": {
+                "appearance": "Deep amber color",
+                "nose": "Elegant aromas of buttery caramel, toasted nuts, and brown spices",
+                "palate": "Rich and complex, with hints of vanilla, toffee and candied fruit.",
+                "finish": "Smooth finish"
+        },
+        "bottleInfo": {
+            "price": 25,
+            "age": "7 years",
+            "abv": "45",
+            "proof": 90,
+            "size": "750 mL"
+        },        
+        "description": "Damn good whiskey - Ron Swanson",
+        "images": [
+            "img/buffalo-trace.png"
+        ]
+}

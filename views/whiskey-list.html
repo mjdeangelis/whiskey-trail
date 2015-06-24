@@ -1,0 +1,84 @@
+<div class="container text-center">
+		<div class="jumbotron wood-background">
+			<h1 class="grey">Whiskey Trail</h1>
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4">
+				<ul class="nav nav-tabs">
+		  			<li class="active"><a data-toggle="tab" href="#search">Search</a></li>
+		  			<li><a data-toggle="tab" href="#browse">Browse</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4"></div>
+		</div>
+		<div class="tab-content">
+			<div id="search" class="tab-pane fade in active">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<input type="text" class="form-control" placeholder="enter whiskey, region, type, etc." ng-model="query">
+				</div>
+				<div class="col-lg-4"></div>
+			</div>
+			<div id="browse" class="tab-pane fade">
+				<div class="row">
+					<!-- <div ng-click="myFilter = null" class="col-sm-3">
+						<button "type"="button" class="btn btn-default">All</button>
+					</div>
+					<div ng-click="myFilter = {region: 'American'}" class="col-sm-3">
+						<button "type"="button" ng-class="{'btn btn-default': !isActive, 'btn btn-default active': isActive}"
+       ng-init="isActive = false"
+       ng-click="isActive = !isActive">American</button>
+					</div>
+					<div class="col-sm-3">
+						<button "type"="button" class="btn btn-default">Best Value</button>
+					</div>
+					<div ng-click="myFilter = {priceLevel: '$$'}" class="col-sm-3">
+						<button "type"="button" class="btn btn-default">Cheap Mixers</button>
+					</div>
+				</div>
+				<div class="row top-buffer">
+					<div ng-click="myFilter = {"type": 'bourbon'}" class="col-sm-3">
+						<button "type"="button" class="btn btn-default">Bourbon</button>
+					</div>
+					<div ng-click="myFilter = {"type": 'scotch'}" class="col-sm-3">
+						<button "type"="button" class="btn btn-default">Scotch</button>
+					</div>
+					<div ng-click="myFilter = {"type": 'bourbon'}" class="col-sm-3">
+						<button "type"="button" class="btn btn-default">Expensive</button>
+					</div>
+					<div ng-click="myFilter = {"type": 'bourbon'}" class="col-sm-3">
+						<button "type"="button" class="btn btn-default">Mixers</button>
+					</div>
+				</div> -->
+				 <select>
+					  <option ng-click="myFilter = null" value="all">All	</option>
+					  <option ng-click="myFilter = {"type": 'Bourbon'}" value="bourbon">Bourbon</option>
+					  <option ng-click="myFilter = {region: 'American'}" value="american">American</option>
+					  <option ng-click="myFilter = {priceLevel: '$$'}" value="under $20">Under $20</option>
+				</select> 
+			</div>
+		</div>
+		<div>
+			<!-- <div ng-repeat="whiskey in store.whiskeys | filter:query">
+				<p>{{whiskey.name}}</p>
+				<p>{{whiskey.price | currency}}</p>
+				<p>{{whiskey.description}}</p>
+			</div> -->
+		</div>
+		<br/>
+		<hr>
+		<div class="col-lg-12" ng-controller="WhiskeyListCtrl">
+			<div class="row">
+				<div class="col-sm-3" ng-repeat="whiskey in whiskeys | filter:query | filter:myFilter">
+						<a href="#/whiskeys/{{whiskey.id}}"><img ng-src="{{whiskey.images[0]}}" height="200" width="200"/></a>
+						<whiskey-title></whiskey-title>
+						<whiskey-desc><
+<!-- 						<p><strong><a href="#/whiskeys/{{whiskey.id}}">{{whiskey.name}}</a></strong></p> -->
+						<p><span class="glyphicon glyphicon-usd"></span>{{whiskey.price}} {{whiskey.abv}}</p>
+				</div>
+			</div>
+		</div>	
+		<div class="row" ng-repeat="rows in chunkedData">
+  			<div class="span4" ng-repeat="whiskey in rows">{{whiskey.name}}</div>
+		</div>
+	
+	</div> <!--end container-->

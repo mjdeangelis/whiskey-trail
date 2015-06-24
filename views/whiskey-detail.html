@@ -1,0 +1,28 @@
+<div class="container text-center">
+
+	<div class="row">
+		<div class="col-lg-4">
+			<img ng-src="{{whiskey.images[0]}}" height="300" width="300">
+		</div>
+		<div class="col-lg-7">
+			<h1>{{whiskey.name}}</h1>
+			<span>Distillery: {{whiskey.distillery}}</span><br>
+			<span>Region: {{whiskey.region}}</span><br>
+			<span>Category: {{whiskey.type}}</span><br>
+			<span>Price: {{whiskey.bottleInfo.price}}</span><br>
+		</div>
+		<div class="col-lg-1">
+			<a href="index.html/whiskeys"><span class="glyphicon glyphicon-remove"></span></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<h2>Distiller's Description</h2>
+		</div>
+		<div class="col-lg-6">
+			<h2>Tasting Notes</h2>
+		</div>
+	</div>
+
+</div>
