@@ -7,6 +7,7 @@
 
 body {
 	margin:0;
+	background-image: url("../img/plain-brown.jpg");
 }
 
 /* Helper Classes */
@@ -25,3 +26,6 @@ body {
 .nav-tabs, .nav-pills {
     text-align:center;
 }
+
+/*Detail Page*/
+.whiskey-detail-container {padding:5em;}

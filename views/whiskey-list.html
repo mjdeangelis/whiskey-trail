@@ -5,7 +5,7 @@
 			<div class="col-lg-4">
 				<ul class="nav nav-tabs">
 		  			<li class="active"><a data-toggle="tab" href="#search">Search</a></li>
-		  			<li><a data-toggle="tab" href="#browse">Browse</a></li>
+		  			<li><a data-toggle="tab" href="/whiskeys/browse">Browse</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-4"></div>
@@ -20,35 +20,6 @@
 			</div>
 			<div id="browse" class="tab-pane fade">
 				<div class="row">
-					<!-- <div ng-click="myFilter = null" class="col-sm-3">
-						<button "type"="button" class="btn btn-default">All</button>
-					</div>
-					<div ng-click="myFilter = {region: 'American'}" class="col-sm-3">
-						<button "type"="button" ng-class="{'btn btn-default': !isActive, 'btn btn-default active': isActive}"
-       ng-init="isActive = false"
-       ng-click="isActive = !isActive">American</button>
-					</div>
-					<div class="col-sm-3">
-						<button "type"="button" class="btn btn-default">Best Value</button>
-					</div>
-					<div ng-click="myFilter = {priceLevel: '$$'}" class="col-sm-3">
-						<button "type"="button" class="btn btn-default">Cheap Mixers</button>
-					</div>
-				</div>
-				<div class="row top-buffer">
-					<div ng-click="myFilter = {"type": 'bourbon'}" class="col-sm-3">
-						<button "type"="button" class="btn btn-default">Bourbon</button>
-					</div>
-					<div ng-click="myFilter = {"type": 'scotch'}" class="col-sm-3">
-						<button "type"="button" class="btn btn-default">Scotch</button>
-					</div>
-					<div ng-click="myFilter = {"type": 'bourbon'}" class="col-sm-3">
-						<button "type"="button" class="btn btn-default">Expensive</button>
-					</div>
-					<div ng-click="myFilter = {"type": 'bourbon'}" class="col-sm-3">
-						<button "type"="button" class="btn btn-default">Mixers</button>
-					</div>
-				</div> -->
 				 <select>
 					  <option ng-click="myFilter = null" value="all">All	</option>
 					  <option ng-click="myFilter = {"type": 'Bourbon'}" value="bourbon">Bourbon</option>
@@ -58,11 +29,6 @@
 			</div>
 		</div>
 		<div>
-			<!-- <div ng-repeat="whiskey in store.whiskeys | filter:query">
-				<p>{{whiskey.name}}</p>
-				<p>{{whiskey.price | currency}}</p>
-				<p>{{whiskey.description}}</p>
-			</div> -->
 		</div>
 		<br/>
 		<hr>

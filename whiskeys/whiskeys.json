@@ -21,7 +21,7 @@
 	},
 	{
 		"name": "Jack Daniel's No. 7 Whiskey",
-		"id": 2,
+		"id": "jack-daniels",
 		"distillery": "Jack Daniel's",
 		"type": "Blended",
 		"region": "American",

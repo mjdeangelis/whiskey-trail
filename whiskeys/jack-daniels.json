@@ -1,0 +1,25 @@
+{
+        "name": "Jack Daniel's No. 7 Whiskey",
+        "id": "jack-daniels",
+        "distillery": "Jack Daniel's",
+        "type": "Blended",
+        "region": "American",
+        "priceLevel": "$",
+        "tasteInfo": {
+                "appearance": "Amber color",
+                "nose": "Jumbled charred nut and burnt sugar aromas have a muddy edge",
+                "palate": "A soft, thin entry to an off-dry medium body with caramel corn and white pepper notes",
+                "finish": "Finishes with a hot, burning ember, dirt, tin foil, and caramel water fade"
+        },
+        "bottleInfo": {
+            "price": 22,
+            "age": "4 years",
+            "abv": 40,
+            "proof": 80,
+            "size": "750 mL"
+        },        
+        "description": "The Jack Daniel Distillery – the oldest registered Distillery in the U.S. – is where it all happens. It’s where Mr. Jack first crafted the recipe for Old No. 7. It’s where the pure, iron-free cave spring water flows. And it’s where every drop of Jack Daniel’s Tennessee Sippin’ Whiskey is still made today",
+        "images": [
+            "img/jack-daniels.png"
+        ]
+}

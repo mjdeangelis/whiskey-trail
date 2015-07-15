@@ -19,8 +19,8 @@
         			templateUrl: 'views/whiskey-detail.html',
         			controller: 'WhiskeyDetailCtrl'
       			}).
-      			when('index.html#browse' , {
-      				templateUrl: 'index.html'	
+      			when('/whiskeys/browse' , {
+      				templateUrl: 'views/whiskey-detail.html'	
       			}).
       			otherwise({
         			redirectTo: '/whiskeys'
