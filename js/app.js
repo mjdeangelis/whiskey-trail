@@ -3,9 +3,11 @@
 (function() {
 	var app = angular.module('store', [
 		'ngRoute',
+		'smoothScroll',
 		'whiskeyControllers',
-		'whiskeyServices'
-		//'whiskeyFilters'//,
+		'whiskeyServices',
+		'whiskeyDirectives',
+		'whiskeyAnimations'
 	]);
 
 	app.config(['$routeProvider',
@@ -30,13 +32,6 @@
 	// app.controller('StoreController', function() {
 	// 	this.bottles = whiskeys;
 	// });
-
-	app.directive('whiskeyTitle', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'whiskey-title.html'
-		};
-	});
 
 	// var whiskeys = [
 	// 	{

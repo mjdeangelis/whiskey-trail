@@ -1,0 +1,25 @@
+{
+        "name": "Four Roses Single Barrel Kentucky Straight Bourbon",
+        "id": "four-roses",
+        "distillery": "Four Roses Distillery",
+        "type": "Bourbon",
+        "region": "American",
+        "priceLevel": "$$$",
+        "tasteInfo": {
+                "appearance": "Deep amber",
+                "nose": "Fruity, spicy, floral, cocoa, maple syrup, moderately woody.",
+                "palate": "Hints of ripe plum & cherries, robust, fullbody, mellow",
+                "finish": "Long finish"
+        },
+        "bottleInfo": {
+            "price": 39,
+            "age": "10 years",
+            "abv": "50%",
+            "proof": 100,
+            "size": "750 mL"
+        },        
+        "description": "A premium Single Barrel Bourbon with a taste you'll want to savor again and again. Complex, full bodied and surprisingly smooth with a delicate long finish that's unbelievably mellow. Contains hints of ripe plum and cherry tastes with fruity, spicy aromas including maple syrup and cocoa. Drink straight up or on the rocks. 100 proof.",
+        "images": [
+            "img/four-roses.png"
+        ]
+}

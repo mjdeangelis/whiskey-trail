@@ -4,26 +4,16 @@
 
 var whiskeyControllers = angular.module('whiskeyControllers', []);
 
-// whiskeyControllers.controller('WhiskeyListCtrl', ['$scope', '$http', function($scope, $http) {
-// 		$http.get('whiskeys/whiskeys.json').success(function(data) {
-// 			$scope.whiskeys = data;
-// 		});
-
-// 		$scope.orderProp = 'age';
-// }]);
-
-// whiskeyControllers.controller('WhiskeyDetailCtrl', ['$scope', '$routeParams', '$http',
-//   function($scope, $routeParams, $http) {
-//   	$http.get('whiskeys/' + $routeParams.whiskeyId + '.json').success(function(data) {
-//       $scope.whiskey = data;
-//     });
-//   }]);
-
-whiskeyControllers.controller('WhiskeyListCtrl', ['$scope', 'Whiskey', 
-	function($scope, Whiskey) {
+whiskeyControllers.controller('WhiskeyListCtrl', ['$scope', 'Whiskey','smoothScroll', function($scope, Whiskey, smoothScroll) {
 		$scope.whiskeys = Whiskey.query();
 		$scope.orderProp = 'age';
+
+		$scope.scrollWhiskey = function() {
+			var element = document.getElementById('whiskeyList');
+			smoothScroll(element);
+		} 
 }]);
+	
 
 whiskeyControllers.controller('WhiskeyDetailCtrl', ['$scope', '$routeParams', 'Whiskey',
   function($scope, $routeParams, Whiskey) {

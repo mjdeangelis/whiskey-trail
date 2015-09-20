@@ -5,16 +5,39 @@
 **********************************
 */
 
-body {
-	margin:0;
-	background-image: url("../img/plain-brown.jpg");
-}
+/*TO DO
+********
+* mobile menu
+* standard functionality
+* username registration
+* username login
+* username comment/ratings
+*/
+
+h1,h2,h3,h4,h5,h6 {color: #801515 !important;}
+
 
 /* Helper Classes */
-.top-buffer {margin-top: 20px;}
-.grey {color: #D3D3D3 !important;}
+.top-buffer {margin-top: 20px; }
+.dark {color: #fff; }
+.primary-color {color: #801515; }
 
-.wood-background {background-image: url("../img/dark_wood.png");}
+/* Definitions */
+.title {color: #28335D !important; }
+
+.hero {background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ), url("../img/whiskey2.jpg"); background-size: cover; background-attachment: fixed; display: table; height: 50em; position: relative; width:100%; top:-2em; /*background-color: #FFEEDE;*/ }
+.hero-text {display: table-cell; color: #fff; vertical-align: middle; text-align: center;  text-shadow: 1px 1px 1px #000;}
+.hero-title {font-size: 4em; font-weight: 900; }
+.hero-sub-title {font-size: 1.5em; opacity: 0.7; }
+
+.whiskey-container {text-align: center; }
+.description {width: 100%;}
+.description .desc-title {font-weight: bold; }
+
+/*Bootstrap overwrites*/
+.form-control {opacity: 0.7; }
+.form-control:focus {opacity: 1; }
+/*a:hover {color: #801515 !important; }*/
 
 /* Navigation Fixes */
 .nav-tabs > li, .nav-pills > li {

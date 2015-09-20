@@ -100,8 +100,8 @@
 		]
 	},
 	{
-		"name": "Four Roses",
-		"id": 6,
+		"name": "Four Roses Single Barrel Kentucky Straight Bourbon",
+		"id": "four-roses",
 		"distillery": "Four Roses Distillery",
 		"type": "Bourbon",
 		"region": "American",
