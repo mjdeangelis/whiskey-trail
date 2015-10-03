@@ -25,3 +25,18 @@ whiskeyControllers.controller('WhiskeyDetailCtrl', ['$scope', '$routeParams', 'W
 		$scope.mainImageUrl = imageUrl;
 	} 
 }]);
+
+whiskeyControllers.controller('LoginCtrl', function($scope, loginService) {
+	$scope.msgtxt = '';
+	$scope.login = function(user) {
+		loginService.login(user, $scope); //call login Service
+	}
+
+});
+
+whiskeyControllers.controller('HomeCtrl', function($scope, loginService) {
+	$scope.txt="We're HOME, BOY";
+	$scope.logout = function() {
+		loginService.logout();
+	}
+});

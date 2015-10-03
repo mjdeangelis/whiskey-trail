@@ -20,13 +20,13 @@
 	        <li><a href="/whiskeys/browse">Browse</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	        <!--empty for now-->
+	        <li><a href="index.html#/login">Login</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-	<header class="hero">
+	<header class="landing-container">
 		<div class="hero-text">
 			<h1 class="hero-title">Pride in Your Shelf.</h1>
 			<p class="hero-sub-title">All of your favorite whiskey, in one place.</p>
@@ -57,20 +57,7 @@
 	</div>
 	<br/>
 	<hr>
-	<div class="col-lg-12" id="whiskeyList">
-		<div class="row">
-			<div ng-repeat="whiskey in whiskeys | filter:query" class="col-sm-3 whiskey-listing">
-				<div class="whiskey-container">	
-					<a href="#/whiskeys/{{whiskey.id}}"><img ng-src="{{whiskey.images[0]}}" height="200" width="200"/></a>
-					<whiskey-title></whiskey-title>
-					<whiskey-desc></whiskey-desc>
-				</div>
-			</div>
-		</div>
-	</div>	
-	<div class="row" ng-repeat="rows in chunkedData">
-			<div class="span4" ng-repeat="whiskey in rows">{{whiskey.name}}</div>
-	</div>
+	<whiskey-list></whiskey-list>
 
 	</div> <!--end tab container-->
 </div>

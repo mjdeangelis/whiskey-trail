@@ -12,9 +12,14 @@ whiskeyDirectives.directive('whiskeyTitle', function() {
 });
 whiskeyDirectives.directive('whiskeyDesc', function() {
 	return {
-		restrict: 'E',
 		templateUrl: 'directives/whiskey-desc.html'
 	};
+});
+whiskeyDirectives.directive('whiskeyList', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'directives/whiskey-list.html'
+    };
 });
 whiskeyDirectives.directive('myEnter', function () {
     return function (scope, element, attrs) {
